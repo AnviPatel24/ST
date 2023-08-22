@@ -1,0 +1,78 @@
+{
+  "id": "4a561505-cf96-4643-b436-c583497dbf6c",
+  "version": "2.0",
+  "name": "081SELSAP",
+  "url": "https://shahabhayphotography.000webhostapp.com/pages/visitor/register.php",
+  "tests": [{
+    "id": "c39c78bd-f80b-4653-9ec6-bc0653f8a9bf",
+    "name": "Untitled",
+    "commands": [{
+      "id": "2e20ecc9-be53-4f05-b7cf-7d34959ddbb8",
+      "comment": "",
+      "command": "open",
+      "target": "https://shahabhayphotography.000webhostapp.com/pages/visitor/register.php",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4ac96250-7e30-4610-8ff9-2538d3b5a867",
+      "comment": "",
+      "command": "assertValue",
+      "target": "name=fname",
+      "targets": [
+        ["name=fname", "name"],
+        ["css=div:nth-child(1) > input", "css:finder"],
+        ["xpath=//input[@name='fname']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c4dd50bb-8843-48cf-a74f-41926338c534",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "name=pass",
+      "targets": [
+        ["name=pass", "name"],
+        ["css=div:nth-child(3) > input", "css:finder"],
+        ["xpath=//input[@name='pass']", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": "anvi"
+    }, {
+      "id": "3e054d93-8c77-472a-887e-d437d243e134",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "name=cpass",
+      "targets": [
+        ["name=cpass", "name"],
+        ["css=div:nth-child(4) > input", "css:finder"],
+        ["xpath=//input[@name='cpass']", "xpath:attributes"],
+        ["xpath=//div[4]/input", "xpath:position"]
+      ],
+      "value": "anvi"
+    }, {
+      "id": "9729999c-1b22-4636-b2c0-720caec0d5fc",
+      "comment": "",
+      "command": "click",
+      "target": "css=td:nth-child(4) > label",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "301a4d91-2f9b-4e9c-8154-320d9b86dc5e",
+      "comment": "",
+      "command": "",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "b1e577fd-eb97-43ca-ac4a-358a76508506",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["c39c78bd-f80b-4653-9ec6-bc0653f8a9bf"]
+  }],
+  "urls": ["https://shahabhayphotography.000webhostapp.com/pages/visitor/index.php", "https://shahabhayphotography.000webhostapp.com/index.php", "https://shahabhayphotography.000webhostapp.com/pages/visitor/register.php"],
+  "plugins": []
+}
